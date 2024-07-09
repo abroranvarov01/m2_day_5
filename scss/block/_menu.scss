@@ -1,0 +1,101 @@
+.menu {
+  padding: 64px 45px;
+}
+.menu_content {
+  width: 268px;
+}
+.menu__title {
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--c1-a);
+}
+.menu_item__link {
+  margin-bottom: 12px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--c2-a);
+}
+.menu_btn {
+  margin-top: 36px;
+  border-radius: 12px;
+  padding: 12.5px 38px 12.5px 16px;
+  background-color: var(--c1-f);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--c1-a);
+  position: relative;
+}
+.menu_btn::after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-200%, -50%);
+  left: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu_btn_img.svg);
+}
+.menu_banner {
+  padding: 48px 0 32px 32px;
+  border-radius: 12px;
+  width: 419px;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu_img.png);
+}
+.menu_banner_top {
+  width: 205px;
+  margin-bottom: 94px;
+}
+.menu_banner_text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c2-a);
+  margin-bottom: 8px;
+}
+.menu_banner_title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--c1-a);
+}
+
+.menu_banner_btn {
+  border: 2px solid var(--c2-c);
+  border-radius: 12px;
+  padding: 12px 38px 12px 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--c1-a);
+  position: relative;
+}
+.menu_banner_btn::after {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background-repeat: no-repeat;
+  background-image: url(../img/menu_btn_banner.svg);
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-200%, -50%);
+}
+.menu_banner_box {
+  display: flex;
+  column-gap: 32px;
+  align-items: center;
+}
+.menu__block {
+  @include flex_jc;
+}

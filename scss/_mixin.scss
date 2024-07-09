@@ -1,0 +1,40 @@
+@mixin buy_btn {
+  border: 2px solid var(--c2-b);
+  border-radius: 12px;
+  padding: 6.5px 12px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--c1-j);
+  background: var(--c2-a);
+}
+
+@mixin more_btn {
+  border-radius: 12px;
+  padding: 6px 16px;
+  background: var(--c1-f);
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--c1-a);
+  &::after {
+    content: "";
+    width: 17px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../img/categories_btn.svg);
+    background-position: center;
+    margin-left: 6px;
+  }
+}
+@mixin flex_jc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin r_grid($w, $g) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax($w, 1fr));
+  column-gap: $g;
+}
