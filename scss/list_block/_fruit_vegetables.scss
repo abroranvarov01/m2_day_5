@@ -1,0 +1,180 @@
+.fruit_vegetables_title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--c1-a);
+}
+.fruit_vegetables_top_list {
+  width: 275px;
+  @include flex_jc;
+}
+.fruit_vegetables_top_item_link {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--c1-a);
+  position: relative;
+}
+.fruit_vegetables_top_item_link::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../img/fruit_vegetables_top.svg);
+  position: absolute;
+  top: -1%;
+  transform: translateX(-150%);
+}
+.fruit_vegetables_top_item_link_3 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--c1-c);
+}
+.fruit_vegetables_top_item_3_box {
+  border-radius: 12px;
+  padding: 0px 8px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  background-color: var(--c2-e);
+  color: var(--c2-a);
+}
+.fruit_vegetables_top_item_3 {
+  @include flex_jc;
+}
+.fruit_vegetables_top {
+  @include flex_jc;
+}
+.check_text_block {
+  border: 1px solid var(--c1-d);
+  border-radius: 12px;
+  padding: 9px 16px;
+  width: 236px;
+  background-color: var(--c1-h);
+}
+.check_text_block_text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--c1-a);
+}
+.check_text_block {
+  @include flex_jc;
+}
+.check_text_radio_label {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--c1-d);
+}
+.check_text_radio:checked + .check_text_radio_label {
+  background-image: url(../img/fillter_text.svg);
+}
+.input_filter_block {
+  @include flex_jc;
+}
+.fruit_vegetables_block_btm {
+  @include flex_jc;
+}
+.input_filter_block {
+  border: 1px solid var(--c1-d);
+  border-radius: 12px;
+  padding: 11.5px 16px;
+  width: 151px;
+}
+.input_filter_text {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--c1-a);
+}
+.input_filter_text_box {
+  border: 1px solid var(--c1-e);
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+.input_filter_text_box_text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c1-a);
+}
+.input_filter_label {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  border: 2px solid var(--c1-d);
+}
+.input_filter:checked + .input_filter_label {
+  background-image: url(../img/filter_check_box.svg);
+  background-position: center;
+  border: 2px solid var(--c2-a);
+}
+.input_filter_block_2 {
+  @include flex_jc;
+  border: 1px solid var(--c1-d);
+  border-radius: 12px;
+  padding: 11.5px 32px 11.5px 16px;
+  background-color: var(--c1-h);
+}
+.input_filter_block_1 {
+  border-radius: 12px;
+  width: 151px;
+  @include flex_jc;
+}
+.input_filter_text_box_select_box_text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c1-a);
+  position: relative;
+}
+.input_filter_text_box_select_box_text::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../img/input_filter_text_box_select_box_text.svg);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.fruit_vegetables__btm_box {
+  border-radius: 12px;
+  padding: 0px 16px 0px 8px;
+  background: var(--c2-e);
+}
+.fruit_vegetables__btm_box_text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c2-a);
+  position: relative;
+}
+.fruit_vegetables__btm_box_text::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../img/x.svg);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(20%, -40%);
+}
+.fruit_vegetables__btm {
+  margin-top: 16px;
+  width: 348px;
+  @include flex_jc;
+}
+.fruit_vegetables__btm_text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--c1-c);
+}
